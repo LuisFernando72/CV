@@ -5,15 +5,15 @@
 }
 :root {
   --color-text: #0d0d0d;
-  --primary-color: #f1e870;
+  --primary-color: #d0f58c;
   --secondary-color: #2a1d06;
   --third-color: #fffaf2;
   --third-color-shadow: #2a1d06;
   --border-color: #545454;
   --color-icon: #0d0d0d;
-  --color-iconf : #171717;
-  --primaryColorf: #E0E0E0;
-  --secondaryColorf:#f62b2b;
+  --color-iconf: #171717;
+  --primaryColorf: #e0e0e0;
+  --secondaryColorf: #f62b2b;
   --colorHoverf: #477487;
   --sizeButton: 60px;
   --sizeIcons: 25px;
@@ -83,7 +83,7 @@ body {
   background-color: var(--secondary-color);
   width: 70%;
   border-radius: 50px;
-  margin: 30px 10px 30px 20%;
+  margin: 30px 10px 30px 22%;
   letter-spacing: 0.6px;
   color: white;
 }
@@ -331,7 +331,6 @@ body {
   left: 95%;
   transform: translate(-50%);
   z-index: 999;
- 
 }
 .menu-item {
   width: var(--sizeButton);
@@ -348,13 +347,12 @@ body {
   transition: transform 300ms;
   border: 1px dashed var(--colorHoverf);
 }
-.menu-content .menu-item .ico{
+.menu-content .menu-item .ico {
   color: white;
   background-color: var(--secondaryColorf);
   padding: 14px;
   border-radius: 50%;
   font-size: 20px;
- 
 }
 .menu-item:hover {
   background-color: var(--colorHoverf);
@@ -373,12 +371,10 @@ body {
 .menu-active .menu-item:nth-child(3) {
   transform: translateY(-70px);
 }
- 
 
 .menu-active #menu {
   transform: rotate(-180deg);
 }
-
 
 /* mediaqueries  */
 @media (max-width: 1000px) {
@@ -390,7 +386,7 @@ body {
     width: 80%;
     text-align: right;
   }
-  .curriculum .container .containerEstudios{
+  .curriculum .container .containerEstudios {
     border-radius: 5px;
   }
 }
@@ -406,7 +402,8 @@ body {
   }
 
   .curriculum .container .name h4 {
-    font-size: 16px;
+    font-size: 15px;
+    text-align: right;
   }
 
   .curriculum .container .name h6 {
@@ -420,7 +417,18 @@ body {
   .containerExperiencia .competencias {
     margin-bottom: 20px;
   }
-  .menu-content{
-    left: 92%;
+  .menu-content {
+    left: 91%;
+  }
+}
+
+@media (max-width: 410px) {
+  .curriculum .container .name h4 {
+    font-size: 11px;
+    text-align: right;
+  }
+
+  .container .sectionHeader .name {
+    padding-left: 10%;
   }
 }
