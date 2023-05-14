@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="lib/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <!-- html2canvas library -->
+    <script src="js/html2canvas.min.js"></script>
+
+    <!-- jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <title>Curriculum</title>
   </head>
   <body>
@@ -13,13 +20,11 @@
       <span class="menu-item" id="menu">
         <i class="fa-solid fa-square-caret-down"></i>
       </span>
-      <a href="#" class="menu-item">
+      <a href="#" id="btn-download" class="menu-item">
         <i class="ico fa-solid fa-print"></i>
       </a>
- 
-      <a href="#" class="menu-item">
-        <i class="ico fa-sharp fa-solid fa-download"></i>
-      </a>
+
+    
     </div>
 
     <div class="curriculum">
@@ -46,22 +51,26 @@
 
               <ul>
                 <li>
+               
                   <span class="icon"
                     ><i class="ico fa-sharp fa-solid fa-mobile"> </i
                   ></span>
-                  <span> +502 5112-1954</span>
+                 <span> <a href=" https://api.whatsapp.com/send/?phone=50251121954">+502 5112-1954</a>
+                 </span>
+                
+                </a>
                 </li>
                 <li>
                   <span class="icon"
                     ><i class="ico fa-sharp fa-solid fa-envelope"></i
                   ></span>
-                  <span> luisc522txe@gmail.com</span>
+                  <span><a href="mailto:luisc522txe@gmail.com">luisc522txe@gmail.com</a></span>
                 </li>
                 <li>
                   <span class="icon"
                     ><i class="ico fa-brands fa-square-facebook"></i
                   ></span>
-                  <span> Facebook</span>
+                  <span> <a href="https://www.facebook.com/luisfernando.paxel.3/">Facebook</a></span>
                 </li>
                 <li>
                   <span class="icon"
@@ -233,3 +242,7 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
+
